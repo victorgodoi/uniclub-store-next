@@ -10,7 +10,8 @@ module.exports = {
       grey: '#cacaca',
       lightBlack: '#222',
       grey2: '#747474',
-      grey3: '#A1A1A1'
+      grey3: '#A1A1A1',
+      imput: '#D8D8D8'
     },
   },
   plugins: [],
