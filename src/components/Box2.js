@@ -7,6 +7,8 @@
 
 import { josefin } from "@/app/fonts"
 import classNames from "classnames"
+import Image from "next/image"
+import Content from 'src/components/Content'
 
 
 // const Title = styled.p`
@@ -31,31 +33,41 @@ import classNames from "classnames"
 //     text-transform: capitalize;
 // `
 
+// const Box = styled(Content)`
+//     padding-top: 170px;
+//     //tirar depois
+//     margin-bottom: 150px;
+
+//     > div {
+//         gap: 110px;
+//     }
+// `
+
 
 const Component = () => {
     return (
-        <div className='pt-[170px] mb-[150px]'>
+        <Content className='pt-[170px] mb-[150px]'>
             <div className="gap-[110px]">
-                {/* <img></img> */}
+                <Image src='images/carrinho.svg' width={35} height={35} />
                 <p className={classNames("text-lightBlack text-2xl not-italic font-semibold leading-[119.682%] capitalize mt-8 mb-5", josefin.className)}>Free Delivery</p>
                 <p className="text-grey2 text-base not-italic font-normal leading-[188.5%] tracking-[0.32px] capitalize">Lorem ipsum dolor sit amet, consectetur adipi elit. ipsum dolor sit amet.</p>
             </div>
             <div className="gap-[110px]">
-                {/* <img></img> */}
+                <Image src='images/escudo.svg' width={35} height={35} />
                 <p className={classNames("text-lightBlack text-2xl not-italic font-semibold leading-[119.682%] capitalize mt-8 mb-5", josefin.className)}>100% secure payment</p>
                 <p className="text-grey2 text-base not-italic font-normal leading-[188.5%] tracking-[0.32px] capitalize">Lorem ipsum dolor sit amet, consectetur adipi elit. ipsum dolor sit amet.</p>
             </div>
             <div className="gap-[110px]">
-                {/* <img></img> */}
+                <Image src='images/medalha.svg' width={35} height={35} />
                 <p className={classNames("text-lightBlack text-2xl not-italic font-semibold leading-[119.682%] capitalize mt-8 mb-5", josefin.className)}>Quality guarantee</p>
                 <p className="text-grey2 text-base not-italic font-normal leading-[188.5%] tracking-[0.32px] capitalize">Lorem ipsum dolor sit amet, consectetur adipi elit. ipsum dolor sit amet.</p>
             </div>
             <div className="gap-[110px]">
-                {/* <img></img> */}
+                <Image src='images/cifrao.svg' width={35} height={35} />
                 <p className={classNames("text-lightBlack text-2xl not-italic font-semibold leading-[119.682%] capitalize mt-8 mb-5", josefin.className)}>guaranteed savings</p>
                 <p className="text-grey2 text-base not-italic font-normal leading-[188.5%] tracking-[0.32px] capitalize">Lorem ipsum dolor sit amet, consectetur adipi elit. ipsum dolor sit amet.</p>
             </div>
-        </div>
+        </Content>
 
 
         // <Box>
