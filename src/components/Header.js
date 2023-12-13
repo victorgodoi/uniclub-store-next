@@ -35,7 +35,7 @@ const Component = () => {
     //const isMainRoute = useMatch("/");
 
     return (
-        <header className='h-[130px] w-full flex items-center justify-center absolute top-0 left-0' >
+        <header className='h-[130px] w-full flex items-center justify-center absolute top-0 left-0 z-10' >
             <div className='max-w-[1480px] w-full px-3 flex justify-between'>
                 <div className='flex items-center'>
                     <p className={classNames('text-black text-3xl font-bold tracking-[-1px] uppercase mr-[70px]', josefin.className)}>uniclub</p>

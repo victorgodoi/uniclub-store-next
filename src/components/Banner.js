@@ -1,82 +1,42 @@
-import styled from 'styled-components'
-import imgBanner from '../images/banner.png'
-import iconButton from '../images/iconButton.svg'
-import Image from 'next/image'
-import { josefin } from "@/app/fonts"
-import classNames from 'classnames'
-
-
-//     h2 {
-//         color: #FFF;
-//         text-align: center;
-//         font-family: 'Jost';
-//         font-size: 16px;
-//         font-style: normal;
-//         font-weight: 400;
-//         line-height: normal;
-//ver se leading-normal é igual line-height: normal
-//         text-transform: uppercase;  
-//     }
-// `
-
-
-
-//     &:hover {
-//         cursor: pointer;
-//         color: #000;
-//         background-color: #FFF;
-
-//colocar o filter na image
-//         img{
-//             filter: invert(1);
-//         }
-//     }
-
-//     img {
-//         width: 22px;
-//         height: 19px;
-//         transition: all 0.5s;
-//     }
-
-// const Button = styled.button`
-//     width: 265px;
-//     height: 44px;
-//     border-radius: 40px;
-//     border: 2px solid #FFF;
-//     background-color: black;
-//     color: #FFF;
-//     font-size: 15px;
-//     letter-spacing: 1.5px;
-//     text-transform: uppercase;
-//     display: flex;
-//     gap:10px;
-//     padding: 15px;
-//     align-items: center;
-//     justify-content: center;
-//     margin-top: 50px;
-//     transition: all 0.5s;
-
+import Image from 'next/image';
+import { josefin } from '@/app/fonts';
+import classNames from 'classnames';
 
 const Component = () => {
-    return (
-        <div>
-            <Image src='images/banner.png' width={full} height={auto} />
-            <div className='bg-black absolute top-[5%] left-[15%] w-[562px] h-[453px] flex flex-col items-center justify-center text-center p-[10%]'>
-                <h1 className={classNames('text-[117px] not-italic font-bold leading-full tracking-[-11.7px] uppercase text-white', josefin.className)}>Street wears</h1>
-                <h2 className='text-white text-center text-base not-italic font-normal leading-normal uppercase'>High quality cool tshirts for street fashion</h2>
-                {/* terminar o botao */}
-                <button className=''>Start shopping <Image src='images/iconButton.svg' width={22} height={19} alt='' className='transition-all duration-500' /></button>
-            </div>
-        </div>
-        // <div>
-        //     <img src={imgBanner} width='100%' height='auto' />
-        //     <Box>
-        //         <h1>Street wears</h1>
-        //         <h2>High quality cool tshirts for street fashion</h2>
-        //         <Button>Start shopping <img src={iconButton} /></Button>
-        //     </Box>
-        // </div>
-    )
-}
+  return (
+    <div className='relative'>
+      <Image
+        src='/images/banner.png'
+        width={2000}
+        height={1000}
+        alt='banner'
+        className='w-full h-auto'
+      />
+      <div className='bg-black absolute top-[30%] left-[20%] w-[562px] h-[453px] flex flex-col items-center justify-center text-center p-[10px]'>
+        <h1
+          className={classNames(
+            'text-[117px] font-bold leading-none tracking-[-8px] uppercase text-white',
+            josefin.className
+          )}
+        >
+          Street wears
+        </h1>
+        <h2 className='text-white text-center text-base uppercase'>
+          High quality cool tshirts for street fashion
+        </h2>
+        <button className='w-[265px] h-11 rounded-[40px] border border-[2px] border-white bg-black text-white uppercase flex gap-[10px] p-4 items-center justify-center mt-[50px] transition-all duration-500 group hover:bg-white hover:text-black'>
+          Start shopping{' '}
+          <Image
+            src='images/iconButton.svg'
+            width={22}
+            height={19}
+            alt=''
+            className='transition-all duration-500 group-hover:invert'
+          />
+        </button>
+      </div>
+    </div>
+  );
+};
 
-export default Component
+export default Component;
