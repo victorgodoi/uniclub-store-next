@@ -21,7 +21,7 @@ import Button from "./Button";
 const Component = () => {
   return (
     //falta o background-image
-    <div className="bg-banner02 bg-no-repeat bg-center bg-cover h-[500px] w-full flex items-center justify-center">
+    <div className="bg-bannerBox05 bg-no-repeat bg-center bg-cover h-[500px] w-full flex items-center justify-center">
       <div className="h-[500px] w-full flex items-center justify-center">
         <div className="w-[990px] flex gap-[185px]">
           <div>

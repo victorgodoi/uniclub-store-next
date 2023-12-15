@@ -13,9 +13,13 @@ module.exports = {
         grey2: "#747474",
         grey3: "#A1A1A1",
         imput: "#D8D8D8",
+        colorFooter: "#333",
       },
       backgroundImage: {
         banner02: "url('/images/banner02.png')",
+        bannerBox05: "url('/images/BannerBox5.png')",
+        banner03: "url('/images/banner03.png')",
+        banner04: "url('/images/banner04.png')",
       },
     },
   },
