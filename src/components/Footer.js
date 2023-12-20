@@ -1,16 +1,6 @@
 import classNames from "classnames";
 import { josefin } from "@/app/fonts";
 
-// const DivDir = styled.div`
-//conferir como add o grid-gap no tailwind
-//     grid-gap: 15px 0;
-//     display: grid;
-//     gap: 130px;
-//     grid-template-columns: repeat(3,1fr);
-// `
-
-// FOOTER ESTA DIFERENTE DO LAYOUT DO FIGMA LISTA ESTA MAIS LONGE QUE O LOGO E OS ICONES
-
 const Component = () => {
   return (
     <footer>
@@ -67,79 +57,73 @@ const Component = () => {
                 </li>
               </ul>
             </div>
-            <div className="grid gap-[130px] grid-gap-[15px] grid-cols-3">
+            <div className="grid gap-[130px] grid-cols-3">
               <ul>
                 <li
                   className={classNames(
-                    "text-white text-[18px] font-bold uppercase",
+                    "text-white text-lg font-bold uppercase",
                     josefin.className
                   )}
                 >
                   Quick links
                 </li>
-                <li className="text-grey3 text-[17px] leading-[214%] tracking-[0.34px] capitalize">
-                  Home
-                </li>
-                <li className="text-grey3 text-[17px] leading-[214%] tracking-[0.34px] capitalize">
+                <li className="text-grey3 leading-loose capitalize">Home</li>
+                <li className="text-grey3 leading-loose capitalize">
                   About us
                 </li>
-                <li className="text-grey3 text-[17px] leading-[214%] tracking-[0.34px] capitalize">
-                  Offers
-                </li>
-                <li className="text-grey3 text-[17px] leading-[214%] tracking-[0.34px] capitalize">
+                <li className="text-grey3 leading-loose capitalize">Offers</li>
+                <li className="text-grey3 leading-loose capitalize">
                   Services
                 </li>
-                <li className="text-grey3 text-[17px] leading-[214%] tracking-[0.34px] capitalize">
+                <li className="text-grey3 leading-loose capitalize">
                   Contact us
                 </li>
               </ul>
               <ul>
                 <li
                   className={classNames(
-                    "text-white text-[18px] font-bold uppercase",
+                    "text-white text-lg font-bold uppercase",
                     josefin.className
                   )}
                 >
                   About
                 </li>
-                <li className="text-grey3 text-[17px] leading-[214%] tracking-[0.34px] capitalize">
+                <li className="text-grey3 leading-loose capitalize">
                   How it work
                 </li>
-                <li className="text-grey3 text-[17px] leading-[214%] tracking-[0.34px] capitalize">
+                <li className="text-grey3 leading-loose capitalize">
                   our packages
                 </li>
-                <li className="text-grey3 text-[17px] leading-[214%] tracking-[0.34px] capitalize">
+                <li className="text-grey3 leading-loose capitalize">
                   promotions
                 </li>
-                <li className="text-grey3 text-[17px] leading-[214%] tracking-[0.34px] capitalize">
+                <li className="text-grey3 leading-loose capitalize">
                   refer a friend
                 </li>
               </ul>
               <ul>
                 <li
                   className={classNames(
-                    "text-white text-[18px] font-bold uppercase",
+                    "text-white text-lg font-bold uppercase",
                     josefin.className
                   )}
                 >
                   Help Centre
                 </li>
-                <li className="text-grey3 text-[17px] leading-[214%] tracking-[0.34px] capitalize">
+                <li className="text-grey3 leading-loose capitalize">
                   Payments
                 </li>
-                <li className="text-grey3 text-[17px] leading-[214%] tracking-[0.34px] capitalize">
+                <li className="text-grey3 leading-loose capitalize">
                   Shipping
                 </li>
-                <li className="text-grey3 text-[17px] leading-[214%] tracking-[0.34px] capitalize">
+                <li className="text-grey3 leading-loose capitalize">
                   Product returns
                 </li>
-                <li className="text-grey3 text-[17px] leading-[214%] tracking-[0.34px] capitalize">
-                  FAQs
-                </li>
-                <li className="text-grey3 text-[17px] leading-[214%] tracking-[0.34px] capitalize">
+                <li className="text-grey3 leading-loose capitalize">FAQs</li>
+                <li className="text-grey3 leading-loose capitalize">
                   Checkout
                 </li>
-                <li className="text-grey3 text-[17px] leading-[214%] tracking-[0.34px] capitalize">
+                <li className="text-grey3 leading-loose capitalize">
                   other Issues
                 </li>
               </ul>
@@ -150,10 +134,10 @@ const Component = () => {
       <div className="flex flex-col bg-black items-center border-t-[1px] border-colorFooter pt-10 pb-[215px]">
         <div className="w-full max-w-[80%]">
           <div className="flex justify-between items-center">
-            <p className="text-grey3 text-[17px] leading-[214%] tracking-[0.34px]">
+            <p className="text-grey3 leading-loose">
               © 2022 UNICLUB. All rights reserved.
             </p>
-            <p className="text-grey3 text-[17px] leading-[214%] tracking-[0.34px]">
+            <p className="text-grey3 leading-loose">
               Design by <span className="font-bold">TemplatesJungle</span>
             </p>
           </div>
