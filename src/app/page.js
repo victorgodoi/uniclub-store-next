@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Box2 from "src/components/Box2";
 import Box5 from "src/components/Box5";
 import Banner from "src/components/Banner";

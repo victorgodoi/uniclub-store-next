@@ -43,7 +43,9 @@ const Component = () => {
               className="rounded-lg border-input w-[350px] h-[57px] px-[10px] text-base outline-none"
               placeholder="Your email address"
             ></input>
-            <Button className="mt-6 w-[350px]">Subscribe now</Button>
+            <Button href="/" className="mt-6 w-[350px]">
+              Subscribe now
+            </Button>
           </div>
         </div>
       </div>

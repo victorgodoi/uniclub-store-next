@@ -46,9 +46,7 @@ const Component = async ({ quantidade, titulo, carregarMais }) => {
         </div>
         {carregarMais && (
           <div className="flex justify-center mt-[100px] mb-[200px]">
-            <Button onClick={() => navigate("/products")}>
-              View all products
-            </Button>
+            <Button href="/products">View all products</Button>
           </div>
         )}
       </div>

@@ -1,9 +1,14 @@
+"use client";
 import classNames from "classnames";
 import { josefin } from "@/app/fonts";
+import { usePathname } from "next/navigation";
 
 const Component = () => {
+  const pathname = usePathname();
+  const homepage = pathname === "/";
+
   return (
-    <footer>
+    <footer className={homepage === false && "mt-[150px]"}>
       <div className="flex flex-col bg-black items-center">
         <div className="w-full max-w-[80%]">
           <div className="flex justify-between mb-[85px] mt-[80px]">
