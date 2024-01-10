@@ -1,7 +1,5 @@
 import { createClient } from "@supabase/supabase-js";
 import Content from "src/components/Content";
-import { josefin } from "@/app/fonts";
-import classNames from "classnames";
 import Card from "src/components/Card";
 import Button from "./Button";
 
@@ -15,23 +13,12 @@ const getData = async ({ quantidade }) => {
   return data;
 };
 
-const Component = async ({ quantidade, titulo, carregarMais }) => {
+const Component = async ({ quantidade, carregarMais }) => {
   const produtos = await getData({ quantidade: quantidade });
 
   return (
     <Content>
       <div className="flex flex-col">
-        <div className="flex items-center flex-col mb-[50px]">
-          <p
-            className={classNames(
-              "text-lightBlack text-4xl font-light uppercase",
-              josefin.className
-            )}
-          >
-            {titulo}
-          </p>
-          <div className="bg-black w-[95px] h-[1px] mt-[30px]" />
-        </div>
         <div className="grid grid-cols-4 gap-y-10 gap-x-[25px]">
           {produtos?.map((produto) => {
             return (
@@ -45,7 +32,7 @@ const Component = async ({ quantidade, titulo, carregarMais }) => {
           })}
         </div>
         {carregarMais && (
-          <div className="flex justify-center mt-[100px] mb-[200px]">
+          <div className="flex justify-center mt-[100px]">
             <Button href="/products">View all products</Button>
           </div>
         )}

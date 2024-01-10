@@ -3,7 +3,7 @@ import classNames from "classnames";
 
 const Component = () => {
   return (
-    <div className="flex justify-center w-full">
+    <div className="flex justify-center w-full mt-[200px]">
       <div className="max-w-[1710px] w-[95%] flex justify-center gap-[60px] mb-[70px]">
         <div className="bg-no-repeat bg-center bg-cover h-[200px] flex-1 bg-banner02">
           <p
